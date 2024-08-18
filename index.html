@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Nazmuddin - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-hidden">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./images/logo.png" alt="logo"
+        class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <button><img src="./images/moon_icon.png" alt="" 
+                class="w-6"></button>
+        
+                <a href="#contact"
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
+                Contact <img src="./images/arrow-icon.png" alt=""
+                class="w-3"></a>
+
+                <button class="block md:hidden ml-3" onclick="openMenu()">
+                    <img src="./images/menu-black.png" alt="" class="w-6">
+                </button>
+        </div>
+
+        <!-- mobile menu -->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-red-50 transition duration-500">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+            </div>
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+    
+<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="./images/foto_profil.png" alt="" class="rounded-full w-32">
+    <h3 class="flex items-end gap-4 text-xl md:text-2xl mb-3">
+    Hi I'm Ahmad Nazmuddin <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">
+    Frontend web developer based in Bogor.</h1>
+    <p class="max-w-2xl mx-auto">
+    I am a frontend developer and UI/UX Design, and I am a student majoring in informatics engineering.</p>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">
+            contact me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
+
+        <a href="./resume/Ahmad Nazmuddin CV (1).pdf" download class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">
+            my resume <img src="./images/download-icon.png" alt="" class="w-4"></a>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
